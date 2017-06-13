@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: robotomedium;
+    font-size:14px;
+}
+
+div, aside, section{
+    box-sizing: border-box;
+} 
+
+.has-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.center {
+    justify-content: center;
+}
+
+.has-direction-col {
+    flex-direction: column;
+}
+.vcenter {
+    align-items: center;
+    vertical-align: center;
+}
+
+.icon {
+    display: inline-block;
+    background-image: url('../images/spritesheet.png');
+}
+
+@media only screen and (min-width: 725px) { 
+    .port-width-aside {
+        width: 300px;
+    }
+    .port-width-content {
+        width: calc(100% - 300px);
+    }
+    .content-text-align {
+        padding-left: 55px;
+    }
+}
+
+@media only screen and (max-width: 725px) { 
+    .port-width-aside {
+        position: absolute;
+    }
+    .slide-hide {
+        display: none;
+    }
+    .port-width-content {
+        width: 100%;
+    }
+    .content-text-align {
+        text-align: center;
+    }
+    
+}
